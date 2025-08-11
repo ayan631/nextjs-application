@@ -1,4 +1,6 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
+
+//You can use clsx to conditionally apply the css classes
 import clsx from 'clsx';
 
 export default function InvoiceStatus({ status }: { status: string }) {
