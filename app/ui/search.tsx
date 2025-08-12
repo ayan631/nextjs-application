@@ -15,7 +15,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
     console.log(`Searching... ${term}`);
     const params = new URLSearchParams(searchParams);
-    params.set('page', '5');
+    params.set('page', '1');
     if (term) {
       params.set('query', term);
     } else {
@@ -23,7 +23,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     }
     replace(`${pathname}?${params.toString()}`);
     // console.log(term);
-  }, 300)
+  }, 1000)
 
   return (
     <div className="relative flex flex-1 flex-shrink-0">
